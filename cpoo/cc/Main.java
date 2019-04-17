@@ -51,6 +51,13 @@ public class Main
        Fichier test2 = new Fichier ("aurevoir");
        Fichier test3 = new Fichier ("bonsoir");
        
-       if () System.out.println ("Question 7:")
+       if (test1.compareNom(test2)) System.out.println ("True");
+       else System.out.println ("False");
+       
+       if (test1.compareNom(test3)) System.out.println ("True");
+       else System.out.println ("False");
+       
+       if (test1.compareNom(test1)) System.out.println ("True");
+       else System.out.println ("False");
     }
 }
