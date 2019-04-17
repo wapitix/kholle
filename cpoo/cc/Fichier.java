@@ -1,4 +1,4 @@
-
+ 
 /**
  * Décrivez votre classe Fichier ici.
  *
@@ -48,7 +48,8 @@ public class Fichier
      * @return          contenu de l'objet
      */
     public String getContenu() {
-        return this.contenu;
+        if (this.contenu != null) return this.contenu;
+        else return "";
     }
     
     /**
@@ -57,7 +58,8 @@ public class Fichier
      * @return          taille du contenu de l'objet
      */
     public int getSize() {
-        return this.contenu.length();
+        if (this.contenu != null) return this.contenu.length();
+        else return 0;
     }
     
     /**
@@ -66,7 +68,7 @@ public class Fichier
      * @return          le fichier et ses informations sous forme de chaine de caractères
      */
     public String toString() {
-        return this.nom + ": " + this.contenu;
+        return this.nom + ": " + this.getContenu();
     }
     
     /**
